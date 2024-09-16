@@ -24,7 +24,7 @@ def create_app():
      # Initialize Firebase
     cred = credentials.Certificate('secret.json')
     firebase_admin.initialize_app(cred, {
-        'storageBucket': 'local-market-6b270.appspot.com'
+        'storageBucket': 'library-management-92e81.appspot.com'
     })
     db.init_app(app)
     migrate.init_app(app, db)
