@@ -1,4 +1,4 @@
-
+#Model.Py
 from flask_login import UserMixin
 from . import db
 
@@ -31,3 +31,4 @@ class BorrowRequest(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     book_title = db.Column(db.String(2000), nullable=False)
     status = db.Column(db.String(20), nullable=False, default='Pending')
+    

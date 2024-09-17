@@ -4,15 +4,32 @@ from .models import User,Upload
 from flask_login import current_user
 from werkzeug.security import generate_password_hash
 from . import db
+import os 
+import json 
 
 views = Blueprint('views', __name__)
 
 @views.route('/')
 @lr
 def home():
-    user=current_user
-    document = Upload.query.all()
-    return render_template('/Home/index.html',user=user,documents=document)
+    user = current_user
+    
+    # Fetch all documents from the database
+    document_db = Upload.query.all()
+    
+    # Path to the JSON file
+    json_file_path = os.path.join( 'document.json')
+    
+    # Load and parse JSON file
+    with open(json_file_path, 'r') as json_file:
+        document_json = json.load(json_file)
+    
+    # Combine the JSON data with the database documents
+    # Assuming that the structure of both is similar, e.g., a list of dictionaries or objects
+    all_documents = document_db + document_json
+    print(all_documents)
+    
+    return render_template('/Home/index.html', user=user, documents=all_documents)
 
 @views.route('/profile',methods=['GET','POST'])
 @lr

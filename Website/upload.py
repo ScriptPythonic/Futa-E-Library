@@ -1,10 +1,9 @@
-from flask import Flask,request,Blueprint,jsonify
+from flask import Blueprint, request, jsonify
 from firebase_admin import storage
 from .models import Upload
 from . import db
 
-upload = Blueprint('upload',__name__)
-
+upload = Blueprint('upload', __name__)
 
 @upload.route('/upload', methods=['POST'])
 def upload_file():
@@ -42,5 +41,3 @@ def upload_file():
     db.session.commit()
 
     return jsonify({'message': 'File successfully uploaded', 'url': file_url}), 201
-
-

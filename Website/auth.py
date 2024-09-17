@@ -83,6 +83,7 @@ def signup():
     # If it's a GET request, just render the signup form
     return render_template('Auth/signup.html')
 
+
 @auth.route('/logout')
 @login_required
 def logout():

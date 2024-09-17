@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "title": "Security Engineering: A Guide to Building Dependable Distributed Systems",
+        "file_type": "Files",
+        "file_url": "/documents/security_engineering.pdf",
+        "publisher": "Ross J. Anderson",
+        "timestamp": "2024-09-17",
+        "department": ["CYS"]
+    },
+    {
+        "id": 2,
+        "title": "The Web Application Hacker's Handbook",
+        "file_type": "Files",
+        "file_url": "/documents/web_application_hacker_handbook.pdf",
+        "publisher": "Dafydd Stuttard, Marcus Pinto",
+        "timestamp": "2024-05-22",
+        "department": ["CYS"]
+    },
+    {
+        "id": 3,
+        "title": "Applied Cryptography: Protocols, Algorithms, and Source Code in C",
+        "file_type": "Files",
+        "file_url": "/documents/applied_cryptography.pdf",
+        "publisher": "Bruce Schneier",
+        "timestamp": "2024-04-05",
+        "department": ["CYS"]
+    },
+    {
+        "id": 4,
+        "title": "Hacking: The Art of Exploitation",
+        "file_type": "Files",
+        "file_url": "/documents/hacking_art_of_exploitation.pdf",
+        "publisher": "Jon Erickson",
+        "timestamp": "2024-03-01",
+        "department": ["CYS"]
+    },
+    {
+        "id": 5,
+        "title": "Cybersecurity and Cyberwar: What Everyone Needs to Know",
+        "file_type": "Audio",
+        "file_url": "/audio/cybersecurity_and_cyberwar.mp3",
+        "publisher": "P.W. Singer, Allan Friedman",
+        "timestamp": "2024-02-15",
+        "department": ["CYS"]
+    },
+    {
+        "id": 6,
+        "title": "Computer Networking: A Top-Down Approach",
+        "file_type": "Audio",
+        "file_url": "/audio/computer_networking.mp3",
+        "publisher": "James F. Kurose, Keith W. Ross",
+        "timestamp": "2024-08-20",
+        "department": ["CSC", "IFT", "IFS"]
+    },
+    {
+        "id": 7,
+        "title": "Operating System Concepts",
+        "file_type": "Files",
+        "file_url": "/documents/operating_system_concepts.pdf",
+        "publisher": "Abraham Silberschatz, Peter B. Galvin, Greg Gagne",
+        "timestamp": "2024-04-17",
+        "department": ["CSC", "IFT"]
+    },
+    {
+        "id": 8,
+        "title": "Artificial Intelligence: A Modern Approach",
+        "file_type": "Video",
+        "file_url": "/videos/ai_modern_approach.mp4",
+        "publisher": "Stuart Russell, Peter Norvig",
+        "timestamp": "2024-07-15",
+        "department": ["CSC", "IFT"]
+    },
+    {
+        "id": 9,
+        "title": "Introduction to Algorithms",
+        "file_type": "Files",
+        "file_url": "/documents/introduction_to_algorithms.pdf",
+        "publisher": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
+        "timestamp": "2024-06-28",
+        "department": ["CSC"]
+    },
+    {
+        "id": 10,
+        "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "file_type": "Files",
+        "file_url": "/documents/design_patterns.pdf",
+        "publisher": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+        "timestamp": "2024-05-05",
+        "department": ["CSC", "IFT"]
+    },
+    {
+        "id": 11,
+        "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+        "file_type": "Files",
+        "file_url": "/documents/clean_code.pdf",
+        "publisher": "Robert C. Martin",
+        "timestamp": "2024-04-01",
+        "department": ["CSC", "IFT"]
+    },
+    {
+        "id": 12,
+        "title": "Computer Organization and Design: The Hardware/Software Interface",
+        "file_type": "Files",
+        "file_url": "/documents/computer_organization.pdf",
+        "publisher": "David A. Patterson, John L. Hennessy",
+        "timestamp": "2024-02-22",
+        "department": ["CSC", "IFT"]
+    },
+    {
+        "id": 13,
+        "title": "Information Systems for Managers",
+        "file_type": "Files",
+        "file_url": "/documents/information_systems_for_managers.pdf",
+        "publisher": "Gabriele Piccoli",
+        "timestamp": "2024-06-10",
+        "department": ["IFS"]
+    },
+    {
+        "id": 14,
+        "title": "Data Science for Business",
+        "file_type": "Files",
+        "file_url": "/documents/data_science_for_business.pdf",
+        "publisher": "Foster Provost, Tom Fawcett",
+        "timestamp": "2024-03-30",
+        "department": ["IFS", "CSC", "IFT"]
+    },
+    {
+        "id": 15,
+        "title": "Enterprise Architecture As Strategy",
+        "file_type": "Files",
+        "file_url": "/documents/enterprise_architecture.pdf",
+        "publisher": "Jeanne W. Ross, Peter Weill, David Robertson",
+        "timestamp": "2024-05-05",
+        "department": ["IFS", "IFT"]
+    },
+    {
+        "id": 16,
+        "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation",
+        "file_type": "Files",
+        "file_url": "/documents/lean_startup.pdf",
+        "publisher": "Eric Ries",
+        "timestamp": "2024-05-18",
+        "department": ["IFS", "IFT"]
+    },
+    {
+        "id": 17,
+        "title": "Managing Information Systems: Strategy and Organization",
+        "file_type": "Files",
+        "file_url": "/documents/managing_information_systems.pdf",
+        "publisher": "David Boddy, Albert Boonstra, Graham Kennedy",
+        "timestamp": "2024-06-05",
+        "department": ["IFS"]
+    },
+    {
+        "id": 18,
+        "title": "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail",
+        "file_type": "Audio",
+        "file_url": "/audio/innovators_dilemma.mp3",
+        "publisher": "Clayton M. Christensen",
+        "timestamp": "2024-03-12",
+        "department": ["IFS", "IFT"]
+    },
+    {
+        "id": 19,
+        "title": "Mastering Bitcoin: Unlocking Digital Cryptocurrencies",
+        "file_type": "Files",
+        "file_url": "/documents/mastering_bitcoin.pdf",
+        "publisher": "Andreas M. Antonopoulos",
+        "timestamp": "2024-08-25",
+        "department": ["IFT", "CYS"]
+    },
+    {
+        "id": 20,
+        "title": "Blockchain Basics: A Non-Technical Introduction in 25 Steps",
+        "file_type": "Files",
+        "file_url": "/documents/blockchain_basics.pdf",
+        "publisher": "Daniel Drescher",
+        "timestamp": "2024-09-01",
+        "department": ["IFT", "CYS"]
+    }
+]
