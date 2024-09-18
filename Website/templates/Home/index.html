@@ -179,7 +179,7 @@
             {% elif current_user.is_authenticated and current_user.role == 'student' %}
                 {% set found_documents = false %}
                 {% for document in documents %}
-                    {% if current_user.department in document.department %}
+                    {% if current_user.department == document.department %}
                         {% set found_documents = true %}
                         <div class="document-card">
                             <div class="flex">
@@ -195,7 +195,7 @@
                                     {% endif %}
                                 </div>
                                 <div class="document-content ml-4">
-                                    <p class="document-title">{{ document.title }}</p>
+                                    <a href="{{ document.file_url }}" class="document-title">{{ document.title }}</a>
                                     <p class="document-info">{{ document.publisher }} | {{ document.timestamp }}</p>
                                     <p class="document-info">{{ document.file_type | title }}</p>
                                 </div>
