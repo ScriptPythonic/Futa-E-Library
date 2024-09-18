@@ -88,6 +88,10 @@
         background-color: #434190;
     }
 
+    .text-center {
+        text-align: center;
+    }
+
     /* Overlay styles */
     .error-overlay {
         position: fixed;
@@ -131,17 +135,20 @@
 {% endblock style %}
 
 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 pt-16">
+    <!-- Search Bar -->
     <div class="search-container">
         <input type="text" placeholder="Search..." class="search-input">
         <button class="search-button">Search</button>
     </div>
 
     <div>
-        <h2 class="text-bold text-center text-2xl ">Books Available For {{ current_user.department }}</h2>
+        <h2 class="text-bold text-center text-2xl">Books Available For {{ current_user.department }}</h2>
     </div>
 
+    <!-- Document Cards -->
     <div class="bg-white p-4 rounded-lg shadow-md overflow-x-auto relative text-sm">
         {% if current_user.is_authenticated and current_user.role in ['admin', 'Super Admin'] %}
+            <!-- Admin and Super Admin: Display all documents -->
             <div class="flex justify-between items-center mb-4">
                 <button class="bg-blue-500 text-white py-2 px-4 rounded flex items-center" onclick="toggleOverlay()">
                     <svg class="w-5 h-5 mr-2" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -150,10 +157,8 @@
                     <span>Upload Documents</span>
                 </button>
             </div>
-        {% endif %}
-    
-        <div class="document-grid">
-            {% if current_user.is_authenticated and current_user.role in ['admin', 'Super Admin'] %}
+
+            <div class="document-grid">
                 {% for document in documents %}
                     <div class="document-card">
                         <div class="flex">
@@ -176,11 +181,12 @@
                         </div>
                     </div>
                 {% endfor %}
-            {% elif current_user.is_authenticated and current_user.role == 'student' %}
-                {% set found_documents = false %}
+            </div>
+        {% elif current_user.is_authenticated and current_user.role == 'student' %}
+            <!-- Student: Show documents for the student's department -->
+            <div class="document-grid">
                 {% for document in documents %}
-                    {% if current_user.department == document.department %}
-                        {% set found_documents = true %}
+                    {% if document.department == current_user.department %}
                         <div class="document-card">
                             <div class="flex">
                                 <div class="icon-container">
@@ -202,39 +208,28 @@
                             </div>
                         </div>
                     {% endif %}
-                {% endfor %}
-                {% if not found_documents %}
-                    <div class="text-center text-red-600 font-semibold py-4">
-                        No documents available for your department.
+                {% else %}
+                    <div class="text-center">
+                        <p>No books available for your department.</p>
                     </div>
-                {% endif %}
-            {% endif %}
-        </div>
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
 </div>
 
 <!-- Error overlay -->
-<div id="error-overlay" class="error-overlay">
+<div class="error-overlay" id="error-overlay">
     <div class="overlay-content">
-        <p>Error: There is an issue accessing the document. Please try again later.</p>
+        <p>Error uploading file</p>
     </div>
 </div>
 
 <script>
     function toggleOverlay() {
-        document.getElementById('error-overlay').classList.toggle('show');
+        const overlay = document.getElementById('error-overlay');
+        overlay.classList.toggle('show');
     }
-
-    // Optional: Automatically show overlay if file_url is empty
-    document.addEventListener('DOMContentLoaded', function() {
-        const cards = document.querySelectorAll('.document-card');
-        cards.forEach(card => {
-            const link = card.querySelector('.document-title').getAttribute('href');
-            if (!link || link.trim() === '') {
-                document.getElementById('error-overlay').classList.add('show');
-            }
-        });
-    });
 </script>
-{% include "Home/overlay.html" %}
-{% endblock %}
+
+{% endblock content %}
