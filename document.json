@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Security Engineering: A Guide to Building Dependable Distributed Systems",
         "file_type": "Files",
-        "file_url": "/documents/security_engineering.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Security%20Engineering.pdf?alt=media&token=16459ae8-1a35-42a6-ae38-94e211ca6f19",
         "publisher": "Ross J. Anderson",
         "timestamp": "2024-09-17",
         "department": ["CYS"]
@@ -12,7 +12,7 @@
         "id": 2,
         "title": "The Web Application Hacker's Handbook",
         "file_type": "Files",
-        "file_url": "/documents/web_application_hacker_handbook.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/the-web-application-hackers-handbook.pdf?alt=media&token=bf6286f1-df65-441b-b846-08cdc917d7a8",
         "publisher": "Dafydd Stuttard, Marcus Pinto",
         "timestamp": "2024-05-22",
         "department": ["CYS"]
@@ -21,7 +21,7 @@
         "id": 3,
         "title": "Applied Cryptography: Protocols, Algorithms, and Source Code in C",
         "file_type": "Files",
-        "file_url": "/documents/applied_cryptography.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Applied_Cryptography_2nd_ed._B._Schneier.pdf?alt=media&token=556889ab-fee7-4907-8425-442c88416440",
         "publisher": "Bruce Schneier",
         "timestamp": "2024-04-05",
         "department": ["CYS"]
@@ -30,7 +30,7 @@
         "id": 4,
         "title": "Hacking: The Art of Exploitation",
         "file_type": "Files",
-        "file_url": "/documents/hacking_art_of_exploitation.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/The%20Art%20of%20Exploitation.pdf?alt=media&token=4ec38bfb-246d-46f2-87fd-258d2fea55c1",
         "publisher": "Jon Erickson",
         "timestamp": "2024-03-01",
         "department": ["CYS"]
@@ -39,7 +39,7 @@
         "id": 5,
         "title": "Cybersecurity and Cyberwar: What Everyone Needs to Know",
         "file_type": "Audio",
-        "file_url": "/audio/cybersecurity_and_cyberwar.mp3",
+        "file_url": "",
         "publisher": "P.W. Singer, Allan Friedman",
         "timestamp": "2024-02-15",
         "department": ["CYS"]
@@ -48,7 +48,7 @@
         "id": 6,
         "title": "Computer Networking: A Top-Down Approach",
         "file_type": "Audio",
-        "file_url": "/audio/computer_networking.mp3",
+        "file_url": "",
         "publisher": "James F. Kurose, Keith W. Ross",
         "timestamp": "2024-08-20",
         "department": ["CSC", "IFT", "IFS"]
@@ -57,7 +57,7 @@
         "id": 7,
         "title": "Operating System Concepts",
         "file_type": "Files",
-        "file_url": "/documents/operating_system_concepts.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/OperatingSystemConcepts-10th.pdf?alt=media&token=456f9a77-002d-413a-ae31-ac40193cf92d",
         "publisher": "Abraham Silberschatz, Peter B. Galvin, Greg Gagne",
         "timestamp": "2024-04-17",
         "department": ["CSC", "IFT"]
@@ -66,7 +66,7 @@
         "id": 8,
         "title": "Artificial Intelligence: A Modern Approach",
         "file_type": "Video",
-        "file_url": "/videos/ai_modern_approach.mp4",
+        "file_url": "",
         "publisher": "Stuart Russell, Peter Norvig",
         "timestamp": "2024-07-15",
         "department": ["CSC", "IFT"]
@@ -75,7 +75,7 @@
         "id": 9,
         "title": "Introduction to Algorithms",
         "file_type": "Files",
-        "file_url": "/documents/introduction_to_algorithms.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Introduction_to_Algorithms_Third_Edition_(2009).pdf?alt=media&token=702f4db2-9c0c-4ffb-af8c-c51099bb5d4e",
         "publisher": "Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein",
         "timestamp": "2024-06-28",
         "department": ["CSC"]
@@ -84,7 +84,7 @@
         "id": 10,
         "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
         "file_type": "Files",
-        "file_url": "/documents/design_patterns.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Erich%20Gamma%2C%20Richard%20Helm%2C%20Ralph%20Johnson%2C%20John%20M.%20Vlissides-Design%20Patterns_%20Elements%20of%20Reusable%20Object-Oriented%20Software%20%20-Addison-Wesley%20Professional%20(1994).pdf?alt=media&token=4711fbde-5709-4de4-84df-ac3eb8497346",
         "publisher": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
         "timestamp": "2024-05-05",
         "department": ["CSC", "IFT"]
@@ -93,7 +93,7 @@
         "id": 11,
         "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
         "file_type": "Files",
-        "file_url": "/documents/clean_code.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Hand%20of%20agile%20craftman.pdf?alt=media&token=c27f0292-84a4-40c3-b659-f92683684da2",
         "publisher": "Robert C. Martin",
         "timestamp": "2024-04-01",
         "department": ["CSC", "IFT"]
@@ -102,7 +102,7 @@
         "id": 12,
         "title": "Computer Organization and Design: The Hardware/Software Interface",
         "file_type": "Files",
-        "file_url": "/documents/computer_organization.pdf",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Computer%20Organization%20and%20Design%2C%20Fifth%20Edition%20The%20HardwareSoftware%20Interface%20by%20Hennessy.pdf?alt=media&token=ce1b91d5-11d7-42d8-8476-5322cc79b202",
         "publisher": "David A. Patterson, John L. Hennessy",
         "timestamp": "2024-02-22",
         "department": ["CSC", "IFT"]
@@ -111,7 +111,7 @@
         "id": 13,
         "title": "Information Systems for Managers",
         "file_type": "Files",
-        "file_url": "/documents/information_systems_for_managers.pdf",
+        "file_url": "",
         "publisher": "Gabriele Piccoli",
         "timestamp": "2024-06-10",
         "department": ["IFS"]
@@ -120,7 +120,7 @@
         "id": 14,
         "title": "Data Science for Business",
         "file_type": "Files",
-        "file_url": "/documents/data_science_for_business.pdf",
+        "file_url": "",
         "publisher": "Foster Provost, Tom Fawcett",
         "timestamp": "2024-03-30",
         "department": ["IFS", "CSC", "IFT"]
@@ -138,7 +138,7 @@
         "id": 16,
         "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation",
         "file_type": "Files",
-        "file_url": "/documents/lean_startup.pdf",
+        "file_url": "",
         "publisher": "Eric Ries",
         "timestamp": "2024-05-18",
         "department": ["IFS", "IFT"]
@@ -147,7 +147,7 @@
         "id": 17,
         "title": "Managing Information Systems: Strategy and Organization",
         "file_type": "Files",
-        "file_url": "/documents/managing_information_systems.pdf",
+        "file_url": "",
         "publisher": "David Boddy, Albert Boonstra, Graham Kennedy",
         "timestamp": "2024-06-05",
         "department": ["IFS"]
@@ -156,7 +156,7 @@
         "id": 18,
         "title": "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail",
         "file_type": "Audio",
-        "file_url": "/audio/innovators_dilemma.mp3",
+        "file_url": "",
         "publisher": "Clayton M. Christensen",
         "timestamp": "2024-03-12",
         "department": ["IFS", "IFT"]
@@ -165,7 +165,7 @@
         "id": 19,
         "title": "Mastering Bitcoin: Unlocking Digital Cryptocurrencies",
         "file_type": "Files",
-        "file_url": "/documents/mastering_bitcoin.pdf",
+        "file_url": "",
         "publisher": "Andreas M. Antonopoulos",
         "timestamp": "2024-08-25",
         "department": ["IFT", "CYS"]
@@ -174,9 +174,54 @@
         "id": 20,
         "title": "Blockchain Basics: A Non-Technical Introduction in 25 Steps",
         "file_type": "Files",
-        "file_url": "/documents/blockchain_basics.pdf",
+        "file_url": "",
         "publisher": "Daniel Drescher",
         "timestamp": "2024-09-01",
         "department": ["IFT", "CYS"]
+    },
+    {
+        "id": 21,
+        "title": "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+        "file_type": "Files",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Designing%20and%20maintaining%20intensive%20application.pdf?alt=media&token=1a2774d8-4691-409c-8a0c-46430e2e84d5",
+        "publisher": "Martin Kleppmann",
+        "timestamp": "2024-09-15",
+        "department": ["SE"]
+    },
+    {
+        "id": 22,
+        "title": "Software Engineering at Google: Lessons Learned from Programming Over Time",
+        "file_type": "Files",
+        "file_url": "",
+        "publisher": "Titus Winters, Tom Manshreck, Hyrum Wright",
+        "timestamp": "2024-09-10",
+        "department": ["SE"]
+    },
+    {
+        "id": 23,
+        "title": "Refactoring: Improving the Design of Existing Code",
+        "file_type": "Files",
+        "file_url": "",
+        "publisher": "Martin Fowler",
+        "timestamp": "2024-09-05",
+        "department": ["SE"]
+    },
+    {
+        "id": 24,
+        "title": "The Pragmatic Programmer: Your Journey to Mastery",
+        "file_type": "Files",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/The%20Pragmatic%20Programmer.pdf?alt=media&token=071d1ae4-167b-442c-ae33-0ba826131a63",
+        "publisher": "Andrew Hunt, David Thomas",
+        "timestamp": "2024-09-12",
+        "department": ["SE"]
+    },
+    {
+        "id": 25,
+        "title": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+        "file_type": "Files",
+        "file_url": "https://firebasestorage.googleapis.com/v0/b/library-management-92e81.appspot.com/o/Clean%20Architecture%20A%20Craftsman%20Guide%20to%20Software%20Structure%20and%20Design.pdf?alt=media&token=a2c3adee-f4ee-4ca8-aadf-b5b6076cc1c4",
+        "publisher": "Robert C. Martin",
+        "timestamp": "2024-09-18",
+        "department": ["SE"]
     }
 ]

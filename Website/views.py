@@ -27,7 +27,7 @@ def home():
     # Combine the JSON data with the database documents
     # Assuming that the structure of both is similar, e.g., a list of dictionaries or objects
     all_documents = document_db + document_json
-    print(all_documents)
+   
     
     return render_template('/Home/index.html', user=user, documents=all_documents)
 

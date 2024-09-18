@@ -87,6 +87,46 @@
     .search-button:hover {
         background-color: #434190;
     }
+
+    /* Overlay styles */
+    .error-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .overlay.show {
+        display: flex;
+    }
+
+    .overlay-content {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .overlay-content p {
+        color: #e53e3e;
+        font-weight: bold;
+    }
 </style>
 {% endblock style %}
 
@@ -94,6 +134,10 @@
     <div class="search-container">
         <input type="text" placeholder="Search..." class="search-input">
         <button class="search-button">Search</button>
+    </div>
+
+    <div>
+        <h2 class="text-bold text-center text-2xl ">Books Available For {{ current_user.department }}</h2>
     </div>
 
     <div class="bg-white p-4 rounded-lg shadow-md overflow-x-auto relative text-sm">
@@ -111,26 +155,26 @@
         <div class="document-grid">
             {% if current_user.is_authenticated and current_user.role in ['admin', 'Super Admin'] %}
                 {% for document in documents %}
-                <div class="document-card">
-                    <div class="flex">
-                        <div class="icon-container">
-                            {% if document.file_type == 'Files' %}
-                                <img src="{{ url_for('static', filename='pdf.svg') }}" class="document-icon" alt="File Icon">
-                            {% elif document.file_type == 'Audio' %}
-                                <img src="{{ url_for('static', filename='audio.svg') }}" class="document-icon" alt="Audio Icon">
-                            {% elif document.file_type == 'Video' %}
-                                <img src="{{ url_for('static', filename='video.svg') }}" class="document-icon" alt="Video Icon">
-                            {% else %}
-                                <img src="{{ url_for('static', filename='icons/default_icon.png') }}" class="document-icon" alt="Default Icon">
-                            {% endif %}
-                        </div>
-                        <div class="document-content ml-4">
-                            <a href="{{ document.file_url }}" class="document-title">{{ document.title }}</a>
-                            <p class="document-info">{{ document.publisher }} | {{ document.timestamp }}</p>
-                            <p class="document-info">{{ document.file_type | title }}</p>
+                    <div class="document-card">
+                        <div class="flex">
+                            <div class="icon-container">
+                                {% if document.file_type == 'Files' %}
+                                    <img src="{{ url_for('static', filename='pdf.svg') }}" class="document-icon" alt="File Icon">
+                                {% elif document.file_type == 'Audio' %}
+                                    <img src="{{ url_for('static', filename='audio.svg') }}" class="document-icon" alt="Audio Icon">
+                                {% elif document.file_type == 'Video' %}
+                                    <img src="{{ url_for('static', filename='video.svg') }}" class="document-icon" alt="Video Icon">
+                                {% else %}
+                                    <img src="{{ url_for('static', filename='icons/default_icon.png') }}" class="document-icon" alt="Default Icon">
+                                {% endif %}
+                            </div>
+                            <div class="document-content ml-4">
+                                <a href="{{ document.file_url }}" class="document-title">{{ document.title }}</a>
+                                <p class="document-info">{{ document.publisher }} | {{ document.timestamp }}</p>
+                                <p class="document-info">{{ document.file_type | title }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 {% endfor %}
             {% elif current_user.is_authenticated and current_user.role == 'student' %}
                 {% set found_documents = false %}
@@ -169,5 +213,28 @@
     </div>
 </div>
 
+<!-- Error overlay -->
+<div id="error-overlay" class="error-overlay">
+    <div class="overlay-content">
+        <p>Error: There is an issue accessing the document. Please try again later.</p>
+    </div>
+</div>
+
+<script>
+    function toggleOverlay() {
+        document.getElementById('error-overlay').classList.toggle('show');
+    }
+
+    // Optional: Automatically show overlay if file_url is empty
+    document.addEventListener('DOMContentLoaded', function() {
+        const cards = document.querySelectorAll('.document-card');
+        cards.forEach(card => {
+            const link = card.querySelector('.document-title').getAttribute('href');
+            if (!link || link.trim() === '') {
+                document.getElementById('error-overlay').classList.add('show');
+            }
+        });
+    });
+</script>
 {% include "Home/overlay.html" %}
 {% endblock %}
