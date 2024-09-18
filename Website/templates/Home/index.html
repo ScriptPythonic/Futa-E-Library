@@ -195,7 +195,7 @@
                                     {% endif %}
                                 </div>
                                 <div class="document-content ml-4">
-                                    <p class="document-title">{{ document.title }}</p>
+                                    <a href="{{ document.file_url }}" class="document-title">{{ document.title }}</a>
                                     <p class="document-info">{{ document.publisher }} | {{ document.timestamp }}</p>
                                     <p class="document-info">{{ document.file_type | title }}</p>
                                 </div>
